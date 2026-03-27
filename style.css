@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🌈 Fundo animado */
+.gradient-bg {
+  background: linear-gradient(135deg, #1177de, #448ee2, #65a1e6, #95bfee);
+  background-size: 250% 250%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 📦 Container */
+
+.container {
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 420px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 👤 Imagem de perfil */
+
+.profile-image {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 18px;
+
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  animation:
+    float 3s ease-in-out infinite,
+    glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.profile-image:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.45);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* nome */
+.username {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* 🔘 BOTÕES */
+.link-button {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.link-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌐 Website (clean) */
+.btn-website {
+  background: #ffffff;
+  color: #333;
+}
+
+/* 📸 Instagram (oficial gradient) */
+.btn-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+}
+
+/* 📺 YouTube */
+.btn-youtube {
+  background: #ff0000;
+}
+
+/* 🎵 Spotify */
+.btn-spotify {
+  background: #1db954;
+}
+
+/* 💼 LinkedIn */
+.btn-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+/* 🟢 Servidor Discord (variação) */
+.btn-discord-server {
+  background: linear-gradient(45deg, #5865f2, #404eed);
+}
+
+/* 🟣 Servidor Discord */
+.btn-discord-server {
+  background: linear-gradient(45deg, #5865f2, #404eed);
+  color: white;
+}
+
+/* ✉️ Email */
+/* 🐱 GitHub */
+.btn-github {
+  background: #171515;
+  color: white;
+}
