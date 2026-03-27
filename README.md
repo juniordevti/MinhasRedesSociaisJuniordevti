@@ -4,7 +4,7 @@ Este projeto é uma página estilo Linktree desenvolvida para centralizar meus p
 
 ## 🚀 Acesse o projeto
 
-👉 https://juniordevti.github.io/meusitepessoal/
+👉 https://juniordevti.github.io/MinhasRedesSociaisJuniordevti/
 
 ---
 
