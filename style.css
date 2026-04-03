@@ -173,3 +173,100 @@ body {
   background: #171515;
   color: white;
 }
+
+.extras {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-card,
+.music-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+.video-card h2,
+.music-card h2 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border: none;
+  border-radius: 16px;
+}
+
+.music-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.music-cover {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.music-info h3 {
+  color: white;
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.music-info p {
+  color: #e5e7eb;
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+}
+
+.music-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1db954;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.music-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .music-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .music-cover {
+    width: 120px;
+    height: 120px;
+  }
+}
